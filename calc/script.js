@@ -1,5 +1,3 @@
-// const { clearConfigCache } = require("prettier");
-
 (function () {
   const display = document.querySelector("#display");
   const dot = document.getElementById("dot");

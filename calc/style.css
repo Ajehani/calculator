@@ -12,6 +12,7 @@ h1 {
 }
 #keyPad {
   display: grid;
+  height:15rem;
   color: black;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
