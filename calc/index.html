@@ -4,73 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<style>
-    h1{
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      text-align: center;
-    }
-    #calc {
-      display:grid;
-      color: black;
-      grid-template-columns: repeat(4,1fr);
-      grid-template-rows: repeat(4,100px);
-      
-    }
-    #equal {
-        background-color: rgb(33, 100, 201);
-    }
-    .num{
-       color:rgb(28, 9, 9);
-       background-color: rgb(184, 179, 179);
-    }
-    .op{
-        background-color:  rgb(109, 106, 106);
-    }
-    #text{
-        font-size:20px;
-        height:30px;
-    }
-    #clear{
-        /* font-size:20px; */
-        height:20px;
-        color:rgb(28, 9, 9);
-       background-color: rgb(184, 179, 179);
-    }
-    #pls{
-        border: 3px solid black;
-        width:30%;
-        margin:auto;
-    }
-</style>
-
+    <title>Calculator</title>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Anas' Calculator</h1>
-    
-<div id="pls">
-    <div type="text" id="text"></div>
-    <div id="calc">
-       <button type="button" id="7" class='num'>7</button>
-       <button type="button" id="8" class='num'>8</button>
-        <button type="button" id="9" class='num'>9</button>
-        <button type="button" id="÷" class="op" style="font-size: 20px;">÷</button>
-        <button type="button" id="4" class='num'>4</button>
-        <button type="button" id="5" class='num'>5</button>
-        <button type="button" id="6" class='num'>6</button>
-        <button type="button" id="x" class="op" style="font-size: 20px;">x</button>
-        <button type="button" id="1" class='num'>1</button>
-        <button type="button" id="2" class='num'>2</button>
-        <button type="button" id="3" class='num'>3</button>
-        <button type="button" id="-" class="op" style="font-size: 20px;">-</button>
-        <button type="button" id="0" class='num'>0</button>
-        <button type="button" id="dot" class="num" style="font-size: 30px;">.</button>
-        <button type="button" id="equal" style="font-size: 20px;">=</button>
-        <button type="button" id="+" class="op" style="font-size: 20px;">+</button>
+<div id="calc">
+<div type="text" id="display"></div>
+<div id="keyPad">
+    <button type="button" id="7" class='num'>7</button>
+    <button type="button" id="8" class='num'>8</button>
+    <button type="button" id="9" class='num'>9</button>
+    <button type="button" id="÷" class="operator" style="font-size: 20px;">÷</button>
+    <button type="button" id="4" class='num'>4</button>
+    <button type="button" id="5" class='num'>5</button>
+    <button type="button" id="6" class='num'>6</button>
+    <button type="button" id="x" class="operator" style="font-size: 20px;">x</button>
+    <button type="button" id="1" class='num'>1</button>
+    <button type="button" id="2" class='num'>2</button>
+    <button type="button" id="3" class='num'>3</button>
+    <button type="button" id="-" class="operator" style="font-size: 20px;">-</button>
+    <button type="button" id="0" class='num'>0</button>
+    <button type="button" id="dot" class="num" style="font-size: 30px;">.</button>
+    <button type="button" id="equal" style="font-size: 20px;">=</button>
+    <button type="button" id="+" class="operator" style="font-size: 20px;">+</button>
 </div>
-<button type="button" id="clear">Clear</button>
+<div id="clearAndbackspace">
+    <button type="button" id="clear" class="options">Clear</button>
+    <button type="button" id='back' class="options">Backspace</button>
 </div>
-
+</div>
 </body>
-<script src="script.js"></script>
+<script src="./script.js"></script>
 </html>
